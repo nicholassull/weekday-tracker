@@ -1,9 +1,10 @@
 import {dayNumber} from '../src/js/weekday-checker.js'
 
 describe('dayNumber', () => {
-  test('should return the number value of the day of the week.', () => {
+
+  test('should return the day of the week for the date given', () => {
     let newDate = "December 21, 2021";
-    expect(dayNumber(newDate)).toEqual(2);
+    expect(dayNumber(newDate)).toEqual("Tuesday");
   });
 });
 

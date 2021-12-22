@@ -4,6 +4,8 @@
 
 export const dayNumber = (date) => {
   let date1 = new Date (date);
-  return date1.getDay();
+  const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  const i = date1.getDay();
+  return weekdays[i];
 };
 
